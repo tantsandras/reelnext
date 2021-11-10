@@ -20,7 +20,7 @@
 .link {
   font-family: TragicMarker;
   font-size: 1.2rem;
-  letter-spacing: 1px;
+
   text-transform: uppercase;
   text-align: center;
   padding: 4px 12px;
@@ -75,6 +75,6 @@
 
 @media screen and (max-width: 600px) {
   .link {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
