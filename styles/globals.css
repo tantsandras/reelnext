@@ -1,9 +1,13 @@
+@font-face {
+  font-family: "TragicMarker";
+  src: url("/fonts/TragicMarker.otf");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "TragicMarker";
 }
 
 a {
@@ -13,4 +17,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+*:focus {
+  outline-color: black;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 1px;
 }

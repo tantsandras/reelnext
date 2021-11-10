@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: "TragicMarker";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heading {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.navSpan {
+  font-size: 1.2rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.socialSpan {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-right: 20%;
+  margin-bottom: 2rem;
+}
+
+.link {
+  margin-right: 10px;
+  padding: 4px;
+  color: #fb0cab;
+}
+
+.linkActive {
+  text-decoration: underline;
+  color: black;
+}
+
+.text {
+  font-family: "Inter";
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  max-width: 800px;
+  padding: 0 1.4rem 0 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.socialLink {
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 20%;
+  background-color: pink;
+}
+
+@media screen and (max-width: 600px) {
+  .socialSpan {
+    padding-right: 1.4rem;
+  }
+}

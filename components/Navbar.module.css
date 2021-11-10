@@ -1,0 +1,80 @@
+.linkList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 94vw;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 0 4rem 0;
+  gap: 0.6rem;
+  z-index: 4;
+}
+
+.listItem {
+  list-style: none;
+}
+
+.link {
+  font-family: "TragicMarker";
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 4px 20px;
+  color: black;
+  position: relative;
+  font-weight: bold;
+}
+
+.link:before,
+.link:after {
+  background-color: #fb0cab;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: skew(-20deg);
+  -webkit-box-shadow: 3px 3px 0px 2px pink;
+  -moz-box-shadow: 3px 3px 0px 2px pink;
+  box-shadow: 3px 3px 0px 2px pink;
+  border-radius: 10%;
+}
+
+.link:hover:before,
+.link:hover:after {
+  background-color: black;
+  -webkit-box-shadow: 3px 2px 0px 3px lightgrey;
+  -moz-box-shadow: 3px 2px 0px 3px lightgrey;
+  box-shadow: 3px 2px 0px 3px lightgrey;
+}
+
+.linkActive {
+  color: #fff;
+}
+
+.link:hover,
+.link:active {
+  color: #ffff66;
+}
+
+.link:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+.menu {
+  height: auto;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .link {
+    font-size: 0.8rem;
+  }
+}

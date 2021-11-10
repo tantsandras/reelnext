@@ -1,0 +1,81 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "TragicMarker";
+  letter-spacing: 1px;
+  margin-bottom: 2.6rem;
+  position: relative;
+  min-width: 280px;
+  max-width: 280px;
+  height: auto !important;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
+}
+
+.readMoreButton {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  line-height: 42px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffff66;
+  background: black;
+  padding: 0;
+  border: none;
+  text-align: center;
+}
+
+.readMoreButton:focus {
+  background-color: #fb0cab;
+  outline-color: #fb0cab;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 1px;
+}
+
+.readMoreButton:hover,
+.readMoreButton:active {
+  color: black;
+  background: transparent;
+  box-shadow: none;
+}
+
+.readMoreButton:before,
+.readMoreButton:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 1px;
+  width: 0;
+  background: black;
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
+}
+.readMoreButton:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.readMoreButton:hover:before,
+.readMoreButton:hover:after,
+.readMoreButton:active:before,
+.readMoreButton:active:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
