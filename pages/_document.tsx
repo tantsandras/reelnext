@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import favicon from "../public/favicon.ico";
 
 class MyDocument extends Document {
   render() {
@@ -10,7 +9,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Knewave&family=Inter:wght@200;300&display=swap"
             rel="stylesheet"
           />
-          <link rel="shortcut icon" href={favicon.src} type="image/x-icon" />
+          <link rel="shortcut icon" href="/favicon.png" />
         </Head>
         <body>
           <Main />
