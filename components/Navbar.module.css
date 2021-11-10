@@ -3,12 +3,12 @@
   flex-direction: row;
   justify-content: flex-end;
   width: 98vw;
-  align-items: flex-start;
+  align-items: center;
   padding: 0;
   position: absolute;
   top: 0;
   left: 0;
-  margin: 0 0 4rem 0;
+  margin: 4px 0 4rem 0;
   gap: 0.6rem;
   z-index: 4;
 }
@@ -20,7 +20,6 @@
 .link {
   font-family: TragicMarker;
   font-size: 1.2rem;
-
   text-transform: uppercase;
   text-align: center;
   padding: 4px 12px;
@@ -31,7 +30,7 @@
 
 .link:before,
 .link:after {
-  background-color: #fb0cab;
+  /* background-color: #fb0cab; */
   content: "";
   z-index: -1;
   position: absolute;
@@ -39,23 +38,25 @@
   bottom: 0;
   left: 0;
   right: 0;
+  border: 1px solid #eaeaea;
   transform: skew(-20deg);
-  -webkit-box-shadow: 3px 3px 0px 2px pink;
-  -moz-box-shadow: 3px 3px 0px 2px pink;
-  box-shadow: 3px 3px 0px 2px pink;
-  border-radius: 10%;
+  -webkit-box-shadow: 3px 3px 0px 0px pink;
+  -moz-box-shadow: 3px 3px 0px 0px pink;
+  box-shadow: 3px 3px 0px 0px pink;
+  border-radius: calc(4 * 1px);
 }
 
 .link:hover:before,
 .link:hover:after {
   background-color: black;
-  -webkit-box-shadow: 3px 2px 0px 3px lightgrey;
-  -moz-box-shadow: 3px 2px 0px 3px lightgrey;
-  box-shadow: 3px 2px 0px 3px lightgrey;
+  border-style: none;
+  -webkit-box-shadow: 0px 0px 0px 0px #fff;
+  -moz-box-shadow: 0px 0px 0px 0px #fff;
+  box-shadow: 0px 0px 0px 0px #fff;
 }
 
 .linkActive {
-  color: #fff;
+  color: #fb0cab;
 }
 
 .link:hover,

@@ -6,7 +6,7 @@
 }
 
 .card {
-  margin-top: 200px;
+  margin-top: 140px;
   border-top-color: black;
   border-top-width: 2px;
   border-top-style: solid;
@@ -71,7 +71,7 @@
   text-align: center;
   z-index: -2;
   left: 50%;
-  top: -44px;
+  top: -48px;
   transform: translateX(-50%);
 }
 

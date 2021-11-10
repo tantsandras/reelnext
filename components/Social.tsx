@@ -14,7 +14,7 @@ const Social = () => {
         aria-label="Go to our Facebook"
         className={styles.socialLink}
       >
-        <FaFacebookSquare color="#fb0cab" size={17.5} />
+        <FaFacebookSquare color="#fb0cab" size={17} />
       </a>
       <a
         href="https://www.instagram.com/reelfeminism/"

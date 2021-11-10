@@ -32,7 +32,8 @@
 }
 
 .link {
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   padding: 4px;
   text-decoration: underline;
   font-weight: 300;
