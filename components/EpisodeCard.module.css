@@ -22,6 +22,7 @@
   font-size: 1.2rem;
   color: black;
   text-align: center;
+  font-weight: 300;
 }
 
 .readMoreButton {
@@ -32,6 +33,7 @@
   text-transform: uppercase;
   cursor: pointer;
   color: #ffff66;
+  font-weight: 300;
   background: black;
   padding: 0;
   border: none;

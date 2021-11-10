@@ -8,12 +8,16 @@ const Navbar = () => {
       <ul className={styles.linkList}>
         <li className={styles.listItem}>
           <SmartLink href="/" activeClassName={styles.linkActive}>
-            <a className={styles.link}>Home</a>
+            <a className={styles.link}>
+              <i>Home</i>
+            </a>
           </SmartLink>
         </li>
         <li className={styles.listItem}>
           <SmartLink href="/team" activeClassName={styles.linkActive}>
-            <a className={styles.link}>Team</a>
+            <a className={styles.link}>
+              <i>Team</i>
+            </a>
           </SmartLink>
         </li>
       </ul>

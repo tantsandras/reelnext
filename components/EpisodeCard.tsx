@@ -26,7 +26,9 @@ const EpisodeCard = ({ guid, slug, title, link, image }: Data) => {
       </h2>
       <Player title={title} link={link} number={trackNumber} />
       <Link href={`/episode/${slug}`}>
-        <a className={styles.readMoreButton}>Read more</a>
+        <a className={styles.readMoreButton}>
+          <i>Read more</i>
+        </a>
       </Link>
     </li>
   );

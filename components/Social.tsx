@@ -4,7 +4,9 @@ import styles from "./Social.module.css";
 const Social = () => {
   return (
     <span className={styles.socialBox}>
-      <span className={styles.text}>Follow us:</span>
+      <span className={styles.text}>
+        <i>Follow us:</i>
+      </span>
       <a
         href="https://www.facebook.com/ReelFeminism/"
         target="_blank"

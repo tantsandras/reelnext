@@ -10,7 +10,7 @@
 .title {
   position: relative;
   line-height: 1.15;
-  margin-top: 50px;
+  margin-top: 80px;
   padding: 1rem 2rem;
   font-size: 6rem;
   letter-spacing: 1px;
@@ -19,6 +19,15 @@
   border-color: black;
   border-left-style: solid;
   border-width: 2px;
+  font-weight: 300;
+}
+
+.subtitle {
+  position: relative;
+  font-family: Inter;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.8rem;
 }
 
 .header {
@@ -28,7 +37,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: calc(100vw * 476 / 1920);
+  height: calc(100vw * 500 / 1920);
 }
 
 .headerImage {
