@@ -3,5 +3,18 @@
 }
 
 .wrapper {
-  background: black;
+  background-color: black;
+  position: relative;
+}
+
+.imageBox {
+  position: relative;
+  width: 100vw;
+  height: calc(100vw * 1080 / 1920);
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }

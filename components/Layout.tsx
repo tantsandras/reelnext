@@ -22,16 +22,22 @@ export default function Layout({
   return (
     <div className={styles.wrapper}>
       <Navbar />
-      <Image
-        src={backgroundImage}
-        alt="dark bricks"
-        layout="fill"
-        objectFit="cover"
-        priority
-        quality={100}
-      />
-      <main>{children}</main>
-      <Footer />
+      <div className={styles.imageBox}>
+        <div className={styles.image}>
+          <Image
+            src={backgroundImage}
+            alt="dark bricks"
+            layout="fill"
+            objectFit="cover"
+            priority
+            quality={100}
+          />
+        </div>
+
+        <main>{children}</main>
+
+        <Footer />
+      </div>
     </div>
   );
 }
