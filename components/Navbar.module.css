@@ -18,14 +18,14 @@
 }
 
 .link {
-  font-family: TragicMarker;
+  font-family: "Barlow Semi Condensed";
   font-size: 1.2rem;
   text-transform: uppercase;
   text-align: center;
   padding: 4px 12px;
-  color: black;
+  color: #fff;
   position: relative;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .link:before,
@@ -53,6 +53,7 @@
   -webkit-box-shadow: 0px 0px 0px 0px #fff;
   -moz-box-shadow: 0px 0px 0px 0px #fff;
   box-shadow: 0px 0px 0px 0px #fff;
+  transition: 100ms ease all;
 }
 
 .linkActive {
@@ -62,6 +63,7 @@
 .link:hover,
 .link:active {
   color: #ffff66;
+  transition: 100ms ease all;
 }
 
 .link:focus {

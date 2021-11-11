@@ -18,7 +18,7 @@ export default function Layout({
   ].join(" ");
 
   return (
-    <div className={className}>
+    <div className={styles.wrapper}>
       <Navbar />
       <main>{children}</main>
       <Footer />

@@ -1,7 +1,7 @@
 .socialBox {
-  color: black;
-  font-family: "TragicMarker";
-  font-weight: 300;
+  color: #fff;
+  font-family: "Barlow Semi Condensed";
+  font-weight: 500;
   font-size: 1rem;
   text-transform: uppercase;
   z-index: 2;
@@ -11,7 +11,7 @@
   justify-content: flex-end;
   align-items: flex-start;
   width: 100%;
-  margin-right: 40%;
+  margin-right: 37%;
   margin-bottom: 0;
 }
 

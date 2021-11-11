@@ -19,7 +19,7 @@ const EpisodePage = ({ episode }: Props) => {
   const date = episode.pubDate?.split(" ") ?? "date and month";
   const cutTitle = episode.title.split("-");
   return (
-    <Layout backgroundVariant="yellowStyle">
+    <Layout>
       <div className={styles.container}>
         <div className={styles.card}>
           <div className={styles.headingWrapper}>

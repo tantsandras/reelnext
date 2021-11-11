@@ -13,12 +13,14 @@
   margin-top: 80px;
   padding: 1rem 2rem;
   font-size: 6rem;
-  font-family: "TragicMarker";
+  font-family: "Barlow Semi Condensed";
   text-transform: uppercase;
   border-color: black;
   border-left-style: solid;
   border-width: 2px;
-  font-weight: 300;
+  color: #fff;
+  font-weight: 500;
+  animation: pulsate 0.11s ease-in-out infinite alternate;
 }
 
 .subtitle {
@@ -48,5 +50,18 @@
 @media (max-width: 600px) {
   .title {
     font-size: 2.6rem;
+  }
+}
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09,
+      0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #f09,
+      0 0 73px #f09, 0 0 80px #f09, 0 0 94px #f09, 0 0 140px #f09;
   }
 }

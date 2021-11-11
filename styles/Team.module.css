@@ -13,12 +13,11 @@
   margin-top: 50px;
   padding: 1rem 2rem;
   font-size: 6rem;
-  font-family: "TragicMarker";
+  font-family: "Barlow Semi Condensed";
   text-transform: uppercase;
-  font-weight: 300;
-  border-color: black;
-  border-bottom-style: solid;
-  border-width: 2px;
+  color: #fff;
+  font-weight: 500;
+  animation: pulsate 0.11s ease-in-out infinite alternate;
 }
 
 .subHeading {
@@ -39,10 +38,11 @@
   height: auto;
   overflow-x: hidden;
   margin-bottom: 200px;
+  background: #fff;
   padding: 2rem 0 2rem 0;
-  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(255, 255, 255, 0.25);
+  box-shadow: 10px 10px 93px 0px rgba(255, 255, 255, 0.25);
 }
 
 .card {
@@ -57,9 +57,9 @@
 
 .card h3 {
   font-size: 1.4rem;
-  font-family: "TragicMarker";
+  font-family: "Barlow Semi Condensed";
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 .teamImage {
@@ -91,5 +91,18 @@
   }
   .title {
     font-size: 2.6rem;
+  }
+}
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09,
+      0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #f09,
+      0 0 73px #f09, 0 0 80px #f09, 0 0 94px #f09, 0 0 140px #f09;
   }
 }

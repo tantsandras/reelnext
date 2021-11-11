@@ -2,19 +2,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-family: "TragicMarker";
-
+  font-family: "Barlow Semi Condensed";
   margin-bottom: 2.6rem;
   position: relative;
   min-width: 280px;
   max-width: 280px;
-  height: auto !important;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(255, 255, 255, 0.25);
+  box-shadow: 10px 10px 93px 0px rgba(255, 255, 255, 0.25);
 }
 
 .title {
@@ -22,7 +20,7 @@
   font-size: 1.2rem;
   color: black;
   text-align: center;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .readMoreButton {
@@ -33,7 +31,7 @@
   text-transform: uppercase;
   cursor: pointer;
   color: #ffff66;
-  font-weight: 300;
+  font-weight: 500;
   background: black;
   padding: 0;
   border: none;
@@ -53,6 +51,7 @@
   color: black;
   background: transparent;
   box-shadow: none;
+  transition: 400ms ease all;
 }
 
 .readMoreButton:before,
@@ -64,8 +63,8 @@
   height: 1px;
   width: 0;
   background: black;
-  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
-    4px 4px 5px 0px #0002;
+  box-shadow: -1px -1px 5px 0px black, 7px 7px 20px 0px #002,
+    4px 4px 5px 0px #003;
   transition: 400ms ease all;
 }
 .readMoreButton:after {

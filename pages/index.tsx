@@ -24,15 +24,15 @@ const Home = ({ feed }: Props) => {
         </Head>
 
         <div className={styles.header}>
-          <div className={styles.headerImage}>
+          {/* <div className={styles.headerImage}>
             <Image
               src={headerImage}
-              alt="Yellow and pink stripes"
+              alt="Pink corner with geometric shapes"
               layout="fill"
               objectFit="contain"
               quality={100}
             />
-          </div>
+          </div> */}
           <h1 className={styles.title}>Reel Feminism</h1>
         </div>
         <Social />
