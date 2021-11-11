@@ -10,6 +10,7 @@
 
 .title {
   line-height: 1.15;
+  position: relative;
   margin-top: 50px;
   padding: 1rem 2rem;
   font-size: 6rem;
@@ -30,6 +31,7 @@
 .grid {
   display: flex;
   flex-direction: row;
+  position: relative;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
