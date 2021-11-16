@@ -3,18 +3,12 @@
 }
 
 .wrapper {
-  background-color: black;
-  position: relative;
 }
 
 .imageBox {
-  position: relative;
+  position: fixed;
   width: 100vw;
-  height: calc(100vw * 1080 / 1920);
-}
-
-.image {
-  position: absolute;
-  width: 100%;
+  z-index: -1;
   height: 100%;
+  /* height: calc(100vw * 1080 / 1920); */
 }

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import styles from "./Layout.module.css";
-import backgroundImage from "../public/Untitled design(11).png";
+import backgroundImage from "../public/background.png";
 
 interface Props {
   children: ReactNode;
@@ -21,23 +21,22 @@ export default function Layout({
 
   return (
     <div className={styles.wrapper}>
-      <Navbar />
       <div className={styles.imageBox}>
-        <div className={styles.image}>
-          <Image
-            src={backgroundImage}
-            alt="dark bricks"
-            layout="fill"
-            objectFit="cover"
-            priority
-            quality={100}
-          />
-        </div>
-
-        <main>{children}</main>
-
-        <Footer />
+        <Image
+          src={backgroundImage}
+          alt="dark bricks"
+          layout="fill"
+          objectFit="cover"
+          priority
+          quality={100}
+          placeholder="blur"
+        />
       </div>
+      <Navbar />
+
+      <main>{children}</main>
+
+      <Footer />
     </div>
   );
 }

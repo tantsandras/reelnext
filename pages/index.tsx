@@ -22,20 +22,9 @@ const Home = ({ feed }: Props) => {
             content="A podcast about films through an intersectional feminist perspective"
           />
         </Head>
-
-        <div className={styles.header}>
-          {/* <div className={styles.headerImage}>
-            <Image
-              src={headerImage}
-              alt="Pink corner with geometric shapes"
-              layout="fill"
-              objectFit="contain"
-              quality={100}
-            />
-          </div> */}
-          <h1 className={styles.title}>Reel Feminism</h1>
-        </div>
-        <Social />
+        <h1 className={styles.title}>Reel Feminism</h1>
+        <h2 className={styles.subtitle}>A feminist film podcast</h2>
+        <Social textVariant="white" />
         <EpisodeList>
           {feed.items.map((element, index) => {
             let id = element.guid ?? index.toString();

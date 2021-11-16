@@ -19,16 +19,14 @@ const EpisodeCard = ({ guid, slug, title, link, image }: Data) => {
   return (
     <li className={styles.card}>
       <Image src={image} alt="Episode art" width={280} height={280} />
-      <h2 className={styles.title}>
+      <h3 className={styles.title}>
         {cutTitle?.[1]}
         <br />
         {cutTitle?.[0]}
-      </h2>
+      </h3>
       <Player title={title} link={link} number={trackNumber} />
       <Link href={`/episode/${slug}`}>
-        <a className={styles.readMoreButton}>
-          <i>Read more</i>
-        </a>
+        <a className={styles.readMoreButton}>Read more</a>
       </Link>
     </li>
   );

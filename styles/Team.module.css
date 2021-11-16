@@ -6,27 +6,32 @@
   align-items: center;
   overflow-x: hidden;
   text-align: center;
-  background-color: black;
 }
 
 .title {
-  line-height: 1.15;
-  position: relative;
   margin-top: 50px;
   padding: 1rem 2rem;
   font-size: 6rem;
-  font-family: "Barlow Semi Condensed";
+  font-family: "Barlow Semi Condensed", sans-serif;
   text-transform: uppercase;
   color: #fff;
   font-weight: 500;
-  animation: pulsate 0.11s ease-in-out infinite alternate;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09,
+    0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
 }
 
 .subHeading {
-  font-family: Inter;
-  font-weight: 300;
-  line-height: 1.4;
-  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 200;
+  font-size: 1.4rem;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 0;
+  transform: translateY(22px);
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09,
+    0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
 }
 
 .grid {
@@ -37,13 +42,13 @@
   align-items: flex-start;
   justify-content: center;
   gap: 2rem;
-  min-width: 360px;
+  min-width: 400px;
   max-width: 1000px;
-
   height: auto;
   overflow-x: hidden;
   margin-bottom: 200px;
   background: #fff;
+  z-index: 2;
   padding: 2rem 0 2rem 0;
   -webkit-box-shadow: 10px 10px 93px 0px rgba(255, 255, 255, 0.25);
   -moz-box-shadow: 10px 10px 93px 0px rgba(255, 255, 255, 0.25);
@@ -62,8 +67,7 @@
 
 .card h3 {
   font-size: 1.4rem;
-  font-family: "Barlow Semi Condensed";
-  text-transform: uppercase;
+  font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
 }
 
@@ -96,6 +100,10 @@
   }
   .title {
     font-size: 2.6rem;
+  }
+  .subHeading {
+    font-size: 1rem;
+    transform: translateY(12px);
   }
 }
 

@@ -9,6 +9,13 @@ import styles from "../../styles/Episode.module.css";
 import Player from "../../components/Player";
 import Image from "next/image";
 import Layout from "../../components/Layout";
+import Social from "../../components/Social";
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaTwitterSquare,
+  FaExternalLinkSquareAlt,
+} from "react-icons/fa";
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -18,6 +25,7 @@ const EpisodePage = ({ episode }: Props) => {
   const trackNumber = episode.guid.split("tag:soundcloud,2010:tracks/")[1];
   const date = episode.pubDate?.split(" ") ?? "date and month";
   const cutTitle = episode.title.split("-");
+  const cutLink = episode.link?.split("reelfeminism/")[1];
   return (
     <Layout>
       <div className={styles.container}>
@@ -32,7 +40,36 @@ const EpisodePage = ({ episode }: Props) => {
                 className={styles.episodeArt}
               />
               <h2 className={styles.date}>{date[1] + " " + date[2]}</h2>
+              <span className={styles.linkList}>
+                <a
+                  href={`https://twitter.com/intent/tweet?url=https%3A//soundcloud.com/reelfeminism/${cutLink}&text=Have%20you%20heard%20Reel%20Feminism%20on%20%23SoundCloud%3F%20%23np&related=soundcloud`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Share this episode on Twitter"
+                >
+                  <FaTwitterSquare size={21} color="#000000" />
+                </a>
+                <a
+                  className={styles.link}
+                  href={`https://www.facebook.com/sharer/sharer.php?u=https%3A//soundcloud.com/reelfeminism/${cutLink}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Share this episode on Facebook"
+                >
+                  <FaFacebookSquare size={20} color="#000000" />
+                </a>
+                <a
+                  className={styles.link}
+                  href={`https://soundcloud.com/reelfeminism/${cutLink}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to episode on SoundCloud"
+                >
+                  <FaExternalLinkSquareAlt size={20} color="#000000" />
+                </a>
+              </span>
             </div>
+
             <div className={styles.titleWrapper}>
               <h1 className={styles.title}>
                 {cutTitle[1]}
@@ -56,6 +93,8 @@ const EpisodePage = ({ episode }: Props) => {
                 </p>
               );
             })}
+
+            <Social />
           </article>
         </div>
       </div>

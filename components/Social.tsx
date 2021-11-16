@@ -1,12 +1,18 @@
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import styles from "./Social.module.css";
 
-const Social = () => {
+interface Props {
+  textVariant?: "default" | "white";
+}
+
+export default function Social({ textVariant = "default" }: Props) {
+  const className = [
+    styles.text,
+    textVariant === "white" ? styles.whiteText : "",
+  ].join(" ");
   return (
     <span className={styles.socialBox}>
-      <span className={styles.text}>
-        <i>Follow us:</i>
-      </span>
+      <span className={className}>Follow us:</span>
       <a
         href="https://www.facebook.com/ReelFeminism/"
         target="_blank"
@@ -27,6 +33,4 @@ const Social = () => {
       </a>
     </span>
   );
-};
-
-export default Social;
+}

@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
-  background-color: black;
 }
 
 .card {
@@ -55,7 +54,7 @@
 
 .title {
   font-size: 1.4rem;
-  font-family: "Barlow Semi Condensed";
+  font-family: "Barlow Semi Condensed", sans-serif;
   color: black;
   text-align: center;
   font-weight: 500;
@@ -64,6 +63,7 @@
 .date {
   font-family: "Inter", sans-serif;
   font-weight: 200;
+  padding: 5px 10px;
   font-size: 1.4rem;
   text-transform: uppercase;
   color: #fff;
@@ -71,10 +71,24 @@
   text-align: center;
   z-index: -2;
   left: 50%;
-  top: -48px;
+  top: -54px;
   transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
   text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09,
     0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
+}
+
+.linkList {
+  position: absolute;
+  padding: 4px 10px 0px 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+}
+
+.link {
+  padding-left: 22px;
 }
 
 .description {
@@ -86,5 +100,5 @@
   font-family: Inter;
   font-weight: 300;
   line-height: 1.4;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }

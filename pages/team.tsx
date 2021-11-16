@@ -12,7 +12,8 @@ const Team = () => {
     <Layout backgroundVariant="yellowStyle">
       <div className={styles.container}>
         <h1 className={styles.title}>Team</h1>
-        <h2 className={styles.subHeading}>Meet the cast of Reel Feminism</h2>
+
+        <h2 className={styles.subHeading}>Meet the cast</h2>
         <section className={styles.grid}>
           <div className={styles.card}>
             <Image

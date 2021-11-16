@@ -1,13 +1,8 @@
-@font-face {
-  font-family: "TragicMarker";
-  src: url("/fonts/TragicMarker.otf");
-}
-
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Barlow Semi Condensed";
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 a {
