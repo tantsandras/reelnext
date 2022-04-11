@@ -24,7 +24,6 @@ const Home = ({ feed }: Props) => {
         </Head>
         <h1 className={styles.title}>Reel Feminism</h1>
         <h2 className={styles.subtitle}>A feminist film podcast</h2>
-        <Social textVariant="white" />
         <EpisodeList>
           {feed.items.map((element, index) => {
             let id = element.guid ?? index.toString();

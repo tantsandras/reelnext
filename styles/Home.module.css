@@ -15,6 +15,7 @@
   text-transform: uppercase;
   color: #fff;
   font-weight: 500;
+  z-index: 4;
   text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09,
     0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
 }
@@ -27,6 +28,7 @@
   text-transform: uppercase;
   color: #fff;
   z-index: 0;
+  margin-bottom: 8rem;
   background-color: rgba(0, 0, 0, 0.75);
   text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09,
     0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
@@ -35,6 +37,7 @@
 @media (max-width: 600px) {
   .title {
     font-size: 2.6rem;
+    transform: translateY(22px);
   }
   .subtitle {
     font-size: 1rem;

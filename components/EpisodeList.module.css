@@ -1,7 +1,7 @@
 .list {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   height: auto;

@@ -15,7 +15,7 @@ const Player = ({ title, link, number }: Track) => {
         title={title}
         scrolling="no"
         frameBorder="no"
-        src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${number}&color=%23ff5500&inverse=false&auto_play=false&show_user=true`}
+        src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${number}&color=%23000000&inverse=false&auto_play=false&show_user=true`}
       ></iframe>
     </div>
   );

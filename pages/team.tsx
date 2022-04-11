@@ -9,7 +9,7 @@ import Layout from "../components/Layout";
 
 const Team = () => {
   return (
-    <Layout backgroundVariant="yellowStyle">
+    <Layout>
       <div className={styles.container}>
         <h1 className={styles.title}>Team</h1>
 

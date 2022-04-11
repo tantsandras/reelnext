@@ -9,7 +9,6 @@ import styles from "../../styles/Episode.module.css";
 import Player from "../../components/Player";
 import Image from "next/image";
 import Layout from "../../components/Layout";
-import Social from "../../components/Social";
 import {
   FaFacebookSquare,
   FaInstagramSquare,
@@ -24,7 +23,8 @@ const EpisodePage = ({ episode }: Props) => {
   const cutSummary = episode.itunes.summary.split("\n");
   const trackNumber = episode.guid.split("tag:soundcloud,2010:tracks/")[1];
   const date = episode.pubDate?.split(" ") ?? "date and month";
-  const cutTitle = episode.title.split("-");
+  const separators = ["-", "REEL", "FEMINISM", " FEMINISIM"];
+  const cutTitle = episode.title.split(new RegExp(separators.join("|"), "g"));
   const cutLink = episode.link?.split("reelfeminism/")[1];
   return (
     <Layout>
@@ -71,11 +71,8 @@ const EpisodePage = ({ episode }: Props) => {
             </div>
 
             <div className={styles.titleWrapper}>
-              <h1 className={styles.title}>
-                {cutTitle[1]}
-                <br />
-                {cutTitle[0]}
-              </h1>
+              <p className={styles.episodeNumber}>Episode {cutTitle[3]}</p>
+              <h1 className={styles.title}>{cutTitle[0]}</h1>
 
               <Player
                 title={episode.title}
@@ -93,8 +90,6 @@ const EpisodePage = ({ episode }: Props) => {
                 </p>
               );
             })}
-
-            <Social />
           </article>
         </div>
       </div>

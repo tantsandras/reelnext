@@ -59,6 +59,19 @@
 
 .linkActive {
   color: #fb0cab;
+  padding: 4px 9px 4px 12px;
+  margin-left: 7px;
+  transition: 100ms ease all;
+}
+
+.linkActive:before,
+.linkActive:after {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  transform: skew(-20deg) translateX(3px);
+  transition: 100ms ease all;
 }
 
 .link:hover,

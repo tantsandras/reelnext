@@ -1,15 +1,8 @@
-.yellowWrapper {
-  background: linear-gradient(-70deg, #ffff66 30%, #fff 30%);
-}
-
-.wrapper {
-}
-
 .imageBox {
   position: fixed;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  z-index: -1;
+  /* z-index: -1; */
   /* height: calc(100vw * 1080 / 1920); */
 }
