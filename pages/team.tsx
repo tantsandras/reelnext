@@ -1,10 +1,10 @@
 import styles from "../styles/Team.module.css";
 import Image from "next/image";
 import JoImage from "../public/Jo.jpeg";
-import AmanImage from "../public/Aman.jpeg";
-import KarineImage from "../public/Karine.jpeg";
+import AmanImage from "../public/Untitled design(23).png";
+import KarineImage from "../public/Untitled design(19).png";
 import LeeImage from "../public/Untitled.png";
-import HedvigImage from "../public/Hedvig.jpeg";
+import HedvigImage from "../public/Untitled design(21).png";
 import Layout from "../components/Layout";
 
 const Team = () => {
@@ -42,12 +42,7 @@ const Team = () => {
             />
             <article className={styles.textBox}>
               <h3>Aman</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+              <p></p>
             </article>
           </div>
           <div className={styles.card}>
@@ -60,12 +55,21 @@ const Team = () => {
             />
             <article className={styles.textBox}>
               <h3>Karine</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+              <p></p>
+            </article>
+          </div>
+
+          <div className={styles.card}>
+            <Image
+              src="https://i1.sndcdn.com/avatars-A0yZyUqOVcxtfqKg-0jZz4Q-t500x500.jpg"
+              width={280}
+              height={280}
+              className={styles.teamImage}
+              alt="Team member"
+            />
+            <article className={styles.textBox}>
+              <h3>Gina</h3>
+              <p></p>
             </article>
           </div>
           <div className={styles.card}>
@@ -87,24 +91,6 @@ const Team = () => {
           </div>
           <div className={styles.card}>
             <Image
-              src="https://i1.sndcdn.com/avatars-A0yZyUqOVcxtfqKg-0jZz4Q-t500x500.jpg"
-              width={280}
-              height={280}
-              className={styles.teamImage}
-              alt="Team member"
-            />
-            <article className={styles.textBox}>
-              <h3>Gina</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </article>
-          </div>
-          <div className={styles.card}>
-            <Image
               src={HedvigImage}
               width={280}
               height={280}
@@ -113,12 +99,7 @@ const Team = () => {
             />
             <article className={styles.textBox}>
               <h3>Hedvig</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+              <p></p>
             </article>
           </div>
           <div className={styles.card}>

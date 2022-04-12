@@ -45,7 +45,8 @@ const DataFetcher = async () => {
         .join()
         .trim()
         .split(" ")
-        .join("-"),
+        .join("-")
+        .replace(":", ""),
     };
   });
 
